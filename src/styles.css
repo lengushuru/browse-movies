@@ -7,7 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.footer,
 .nav-bar {
   display: flex;
   justify-content: space-between;
