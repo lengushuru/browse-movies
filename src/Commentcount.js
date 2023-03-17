@@ -3,4 +3,5 @@ const commentCounter = (commentContainer) => {
   return count;
 };
 
-export default commentCounter;
+// export default commentCounter;
+module.exports = commentCounter;
