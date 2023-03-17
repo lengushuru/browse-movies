@@ -52,7 +52,7 @@ const renderModalPopup = async (modalPopup, modalid) => {
       const updatedComments = await getComment(modalid);
       const updatedCommentsList = updatedComments
         .map(
-          (comment) => `<li>${comment.creation_date} ${comment.username} ${comment.comment}</li>`,
+          (comment) => `<li><div class='top-div'><p>${comment.creation_date}</p><p>${comment.username}</p></div><div class = 'commentdiv'>${comment.comment}</div></li>`,
         )
         .join('');
       const commentsListElement = form.previousElementSibling;
