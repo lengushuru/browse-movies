@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(94, 92, 92);
 }
 
 .footer,
@@ -8,10 +13,112 @@
   display: flex;
   justify-content: space-between;
   padding: 2% 10%;
-  border-bottom: 1px solid rgb(68, 68, 68);
+  background-color: rgb(68, 67, 67);
+  border-radius: 50px;
 }
 
 .nav-bar a {
   text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.nav-bar p {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: 33fr 33fr 33fr;
+  gap: 5%;
+  margin: 0;
+  padding: 0  2%;
+  padding-top: 10%;
+  background-color: rgb(94, 92, 92);
+}
+
+.movie-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-items img {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.total-counter {
   color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.name-like {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-count {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.like-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+
+.like-count button {
+  margin-right: auto;
+  margin-left: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: rgb(20, 1, 1);
+  font-weight: bold;
+}
+
+.like-count button:hover {
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: black;
+}
+
+.fa-heart.liked {
+  color: red;
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+}
+
+.movie-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2% 0;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
