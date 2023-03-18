@@ -1,3 +1,5 @@
+import { fetchSingleShowComment } from './RenderModal.js';
+
 const movies = document.querySelector('.movies');
 const reciver = 'https://api.tvmaze.com/shows';
 const totalCounter = document.querySelector('.total-counter');
@@ -48,6 +50,10 @@ const displayItems = async (imgUrl, title, itemId) => {
   </div>
   `;
   movies.appendChild(items);
+
+  document.getElementById(itemId).addEventListener('click', (e) => {
+    fetchSingleShowComment(e);
+  });
 
   //   Send updated like count to API
   const sendLikeCountToAPI = async () => {
