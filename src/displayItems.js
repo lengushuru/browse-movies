@@ -37,7 +37,7 @@ const displayItems = async (imgUrl, title, itemId) => {
           </div>
       </div>
       <div class="like-count">
-          <button id="${itemId}"Comment</button>
+          <button id="${itemId}">Comment</button>
           <div class="like-counter">
             <i class="fa-sharp fa-solid fa-heart"></i>
             <p class="counter"> ${item.count}</p>
