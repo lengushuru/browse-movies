@@ -12,20 +12,6 @@ const postcomment = (itemId, username, comment) => {
       comment,
     }),
   });
-  // .then((response) => {
-  //   if (response.ok) {
-  //     return response.json() ;
-  //  }
-  //   // else {
-  //   //   throw new Error(`Error: ${response.status}`);
-  //   // }
-  // })
-  // .catch((error) => {
-  //   throw new Error(error);
-  // });
 };
 
 export default postcomment;
-
-// q: how to disable linter for specific folder?
-// a: add .eslintignore file in root folder and add the folder name in it
