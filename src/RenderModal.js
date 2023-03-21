@@ -52,14 +52,8 @@ const renderModalPopup = async (modalPopup, modalid) => {
       postcomment(modalid, name, comment);
 
       const date = new Date().toLocaleString().split(',')[0].replace(/\//g, '-');
-      let date1 = '';
-
-      for(let i = date.length -1; i >= 0; i -= 1) {
-        date1 += date[i];
-      }
-
       const update = document.createElement('li');
-      update.innerHTML = `<div class='top-div'><p>${date1.split(' ')[0].replace(/\//g, '-')}</p><p>${name}</p></div><div class = 'commentdiv'>${comment}</div>`;
+      update.innerHTML = `<div class='top-div'><p>${date.split(' ')[0].replace(/\//g, '-')}</p><p>${name}</p></div><div class = 'commentdiv'>${comment}</div>`;
       const commentsListElement = form.previousElementSibling;
       commentsListElement.appendChild(update);
       form.reset();
