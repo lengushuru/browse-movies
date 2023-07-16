@@ -87,7 +87,7 @@
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->You can view the final page [HERE]()
+>You can view the final page [HERE](https://silly-clafoutis-5ce41b.netlify.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
